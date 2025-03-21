@@ -34,3 +34,11 @@ After all of the parsing done, it prints the received request to the console.
 ### Screenshot in Browser
 
 ![Commit 2 screen capture](/assets/images/commit2.png)
+
+## Commit 3 Reflection Notes
+
+The refactored code improves clarity, maintainability, and scalability by eliminating duplication. Instead of repeating response logic inside if-else, it assigns status_line and filename first, then processes the response once. This makes it easier to extend (e.g., adding more endpoints) and improves readability by separating response selection from response formatting and sending.
+
+### Screenshot in Browser
+
+![Commit 3 screen capture](/assets/images/commit3.png)
