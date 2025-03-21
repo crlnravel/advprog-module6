@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: linear-gradient(135deg, #1e1e2f, #3a3a60);
+        color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero {
+        max-width: 700px;
+        padding: 20px;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        opacity: 0.8;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(90deg, #e52e71, #ff8a00);
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        text-decoration: none;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Hello, I'm Ravel</h1>
+      <p>
+        A passionate Software Developer who loves building amazing digital
+        experiences.
+      </p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </body>
+</html>

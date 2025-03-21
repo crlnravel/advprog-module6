@@ -28,3 +28,9 @@ The `take_while` method is used to stop reading when an empty line is encountere
 Then, it collects the lines into a vector of strings.
 
 After all of the parsing done, it prints the received request to the console.
+
+## Commit 2 Reflection Notes
+
+### Screenshot in Browser
+
+![Commit 2 screen capture](/assets/images/commit2.png)
