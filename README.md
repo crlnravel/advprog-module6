@@ -42,3 +42,13 @@ The refactored code improves clarity, maintainability, and scalability by elimin
 ### Screenshot in Browser
 
 ![Commit 3 screen capture](/assets/images/commit3.png)
+
+## Commit 4 Reflection Notes
+
+When we open 127.0.0.1/sleep, the server pauses for 10 seconds before responding because of this line:
+
+```rust
+thread::sleep(Duration::from_secs(10));
+```
+
+This means the entire thread handling the request is blocked for 10 seconds. Now, if we try to access 127.0.0.1/ in another browser window before the sleep request is done, it will also be delayed. This happens because Rust’s TcpListener::incoming() processes connections sequentially in a single thread.
