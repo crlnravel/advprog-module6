@@ -52,3 +52,7 @@ thread::sleep(Duration::from_secs(10));
 ```
 
 This means the entire thread handling the request is blocked for 10 seconds. Now, if we try to access 127.0.0.1/ in another browser window before the sleep request is done, it will also be delayed. This happens because Rust’s TcpListener::incoming() processes connections sequentially in a single thread.
+
+## Commit 5 Reflection Notes
+
+This commit upgrades the server to a multi-threaded approach, allowing it to handle up to four requests concurrently. Previously, a request to /sleep blocked all other clients, causing delays. With this change, slow requests no longer affect others, significantly improving response times and scalability. It also reinforces key concepts in thread pool management and thread safety in Rust.
